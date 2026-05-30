@@ -1,0 +1,492 @@
+/* 
+   GLOBAL RESET
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #1f2937;
+}
+
+/* 
+   NAVBAR
+ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  color: #2563eb;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* 
+   HERO SECTION
+ */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 8%;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 25px;
+  color: #e5e7eb;
+}
+
+.hero-image img {
+  width: 360px;
+  border-radius: 12px;
+}
+
+/* 
+   BUTTON
+ */
+.btn {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 
+   SERVICES SECTION
+ */
+.services {
+  background: #f1f5f9;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.services h3 {
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Service Card */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+  color: #2563eb;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #1f2937;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/*
+   PROJECT SECTION
+ */
+.project-showcase {
+  padding: 80px 8%;
+  text-align: center;
+  background: #eaf4ff;
+}
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-images img {
+  width: 70%;
+  max-width: 450px;
+  border-radius: 14px;
+}
+
+/* 
+   IMAGE ANIMATION
+*/
+.animated-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.animated-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.ai-disclaimer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* 
+   AUTH CTA
+*/
+.auth-section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+/* 
+   FOOTER
+ */
+.footer {
+  background: #1e293b;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 20px;
+}
+/* 
+   SCROLL ANIMATION
+
+
+/* Initial animation state */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* When card becomes visible */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+/*
+   OUR PROJECTION SECTION
+*/
+.projection {
+  padding: 80px 8%;
+  text-align: center;
+  background: #f7f9fc;
+}
+
+.projection h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+
+/* Projection Card */
+.projection-box {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projection-box h4 {
+  color: #2563eb;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.projection-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+/* Hover Effect */
+.projection-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+/* ======================
+   PROJECTION IMAGE GRID
+====================== */
+
+.projection-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.projection-image-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.projection-image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+/* ===============================
+   AUTH BOX ANIMATION (NO HTML CHANGE)
+=============================== */
+.auth-box {
+  animation: fadeSlide 0.7s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.auth-box:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+
+.auth-box:nth-of-type(2) {
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===============================
+   ATTRACTIVE PLACEHOLDERS
+=============================== */
+
+/* Default placeholder style */
+.auth-box input::placeholder {
+  color: #94a3b8;              /* soft blue-gray */
+  font-size: 13.5px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+/* On focus: placeholder moves slightly */
+.auth-box input:focus::placeholder {
+  color: #2563eb;              /* brand blue */
+  transform: translateX(4px);
+}
+
+/* Input field enhancement */
+.auth-box input {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+/* On focus: glow effect */
+.auth-box input:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Optional: subtle hover */
+.auth-box input:hover {
+  border-color: #93c5fd;
+}
+/* ===============================
+   INPUT SPACING (DISTANCE)
+=============================== */
+
+/* Space between each input */
+.auth-box input {
+  margin-bottom: 14px;   /* 👈 distance between fields */
+}
+
+/* Last input before button */
+.auth-box input:last-of-type {
+  margin-bottom: 20px;
+}
+
+/* Button spacing from inputs */
+.auth-box .btn {
+  margin-top: 8px;
+}
+
+/* ===============================
+   CHAT ASSISTANT STYLES
+=============================== */
+.chat-section {
+  padding: 50px 8%;
+  background: #f1f5f9;
+  min-height: 80vh;
+}
+
+.chat-section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.bot-message {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+}
+
+.user-message {
+  background: #2563eb;
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+}
+
+.chat-input-area {
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.chat-input-area input:focus {
+  border-color: #2563eb;
+}
+
+/* ===============================
+   EXERCISES SECTION
+=============================== */
+.exercises {
+  padding: 80px 8%;
+  text-align: center;
+  background: #eef2ff;
+}
+
+.exercises h3 {
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.exercises .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   SEARCH SECTION
+=============================== */
+.search-section {
+  padding: 40px 8% 0;
+  background: #eef2ff;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 25px;
+  border: 2px solid #cbd5e1;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}

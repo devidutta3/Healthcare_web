@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Techno Sayain</h1>
+  <nav class="nav-links">
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+<section class="services">
+  <h3>Welcome, <span id="patientNameDisplay">Patient</span></h3>
+
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <h4>Upload Medical Image</h4>
+      <input type="file"><br><br>
+      <select class="input-select">
+        <option>English</option>
+        <option>Odia</option>
+        <option>Hindi</option>
+      </select><br><br>
+      <button class="btn">Analyze</button>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <h4>Medical Report Status</h4>
+      <div id="patientReportContainer">
+        <p style="color: #f59e0b; font-weight: 500;">⏳ Pending Doctor Verification</p>
+        <p style="font-size: 13px; color: #6b7280; margin-top: 5px;">The AI result is currently being reviewed by a specialist.</p>
+      </div>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <h4>AI Mode</h4>
+      <p>Chat with our AI assistant for instant health queries and support.</p>
+      <a href="assistant.html" class="btn" style="margin-top: 10px;">Open Assistant</a>
+    </div>
+  </div>
+</section>
+
+<section class="search-section">
+  <input type="text" id="exerciseSearch" placeholder="Search for exercises..." class="search-input">
+</section>
+
+<section class="exercises">
+  <h3>Neck (Cervical Spine) Exercises</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Neck+Rotation" alt="Neck Rotation">
+      <h4>Neck Rotation</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Neck+Flexion" alt="Neck Flexion">
+      <h4>Neck Flexion</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Neck+Extension" alt="Neck Extension">
+      <h4>Neck Extension</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Neck+Side+Bending" alt="Neck Side Bending">
+      <h4>Neck Side Bending</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Chin+Tucks" alt="Chin Tucks">
+      <h4>Chin Tucks</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Isometric+Neck+Press" alt="Isometric Neck Press">
+      <h4>Isometric Neck Press</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Upper+Trapezius+Stretch" alt="Upper Trapezius Stretch">
+      <h4>Upper Trapezius Stretch</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cervical+Retraction" alt="Cervical Retraction with Band">
+      <h4>Cervical Retraction with Band</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Isometric+Lateral+Hold" alt="Isometric Lateral Neck Hold">
+      <h4>Isometric Lateral Neck Hold</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Prone+Neck+Extension" alt="Prone Neck Extension">
+      <h4>Prone Neck Extension</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Deep+Neck+Flexor" alt="Deep Neck Flexor Activation">
+      <h4>Deep Neck Flexor Activation</h4>
+    </div>
+
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Resistance+Band+Rotation" alt="Resistance Band Neck Rotation">
+      <h4>Resistance Band Neck Rotation</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🦾 SHOULDER</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Shoulder+Rolls" alt="Shoulder Rolls">
+      <h4>Shoulder Rolls</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Arm+Circles" alt="Arm Circles">
+      <h4>Arm Circles</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wall+Push-Ups" alt="Wall Push-Ups">
+      <h4>Wall Push-Ups</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Pendulum+Exercise" alt="Pendulum Exercise">
+      <h4>Pendulum Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Shoulder+Shrugs" alt="Shoulder Shrugs">
+      <h4>Shoulder Shrugs</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Resistance+Band+Pull" alt="Resistance Band Pull Apart">
+      <h4>Resistance Band Pull Apart</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Overhead+Arm+Raise" alt="Overhead Arm Raise">
+      <h4>Overhead Arm Raise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cross-Body+Stretch" alt="Cross-Body Shoulder Stretch">
+      <h4>Cross-Body Shoulder Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Arnold+Press" alt="Arnold Press">
+      <h4>Arnold Press</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Lateral+Raises" alt="Lateral Raises">
+      <h4>Lateral Raises</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Front+Raises" alt="Front Raises">
+      <h4>Front Raises</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Reverse+Fly" alt="Reverse Fly">
+      <h4>Reverse Fly</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Scaption+Raise" alt="Scaption Raise">
+      <h4>Scaption Raise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=External+Rotation" alt="Shoulder External Rotation">
+      <h4>Shoulder External Rotation</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Internal+Rotation" alt="Shoulder Internal Rotation">
+      <h4>Shoulder Internal Rotation</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wall+Angels" alt="Wall Angels">
+      <h4>Wall Angels</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Overhead+Press" alt="Overhead Press">
+      <h4>Overhead Press</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Scapular+Push-Ups" alt="Scapular Push-Ups">
+      <h4>Scapular Push-Ups</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🦾 ELBOW & FOREARM</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Elbow+Flexion" alt="Elbow Flexion">
+      <h4>Elbow Flexion</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Elbow+Extension" alt="Elbow Extension">
+      <h4>Elbow Extension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Bicep+Curl" alt="Bicep Curl">
+      <h4>Bicep Curl</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Tricep+Extension" alt="Tricep Extension">
+      <h4>Tricep Extension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Forearm+Rotation" alt="Forearm Rotation">
+      <h4>Forearm Rotation</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Eccentric+Bicep+Curl" alt="Eccentric Bicep Curl">
+      <h4>Eccentric Bicep Curl</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Reverse+Wrist+Curl" alt="Reverse Wrist Curl">
+      <h4>Reverse Wrist Curl</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Farmer%E2%80%99s+Carry" alt="Farmer’s Carry">
+      <h4>Farmer’s Carry</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wrist+Roller" alt="Wrist Roller Exercise">
+      <h4>Wrist Roller Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hammer+Curl" alt="Hammer Curl">
+      <h4>Hammer Curl</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>✋ WRIST & HAND</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wrist+Flexion+Stretch" alt="Wrist Flexion Stretch">
+      <h4>Wrist Flexion Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wrist+Extension+Stretch" alt="Wrist Extension Stretch">
+      <h4>Wrist Extension Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wrist+Rotations" alt="Wrist Rotations">
+      <h4>Wrist Rotations</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Grip+Strength" alt="Grip Strength Exercise">
+      <h4>Grip Strength Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Finger+Stretch" alt="Finger Stretch">
+      <h4>Finger Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Prayer+Stretch" alt="Prayer Stretch">
+      <h4>Prayer Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Therapy+Putty" alt="Therapy Putty Squeeze">
+      <h4>Therapy Putty Squeeze</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Finger+Extension" alt="Finger Extension with Band">
+      <h4>Finger Extension with Band</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Thumb+Opposition" alt="Thumb Opposition Drill">
+      <h4>Thumb Opposition Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Grip+Ball+Compression" alt="Grip Ball Compression">
+      <h4>Grip Ball Compression</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hand+Towel+Twist" alt="Hand Towel Twist">
+      <h4>Hand Towel Twist</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🧘 SPINE & BACK</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cat-Cow+Stretch" alt="Cat-Cow Stretch">
+      <h4>Cat-Cow Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cobra+Stretch" alt="Cobra Stretch">
+      <h4>Cobra Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Child%E2%80%99s+Pose" alt="Child’s Pose">
+      <h4>Child’s Pose</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Pelvic+Tilt" alt="Pelvic Tilt">
+      <h4>Pelvic Tilt</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Glute+Bridge" alt="Glute Bridge">
+      <h4>Glute Bridge</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Bird+Dog" alt="Bird Dog">
+      <h4>Bird Dog</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Superman+Hold" alt="Superman Hold">
+      <h4>Superman Hold</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Seated+Spinal+Twist" alt="Seated Spinal Twist">
+      <h4>Seated Spinal Twist</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Back+Extension" alt="Back Extension">
+      <h4>Back Extension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Dead+Bug" alt="Dead Bug">
+      <h4>Dead Bug</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Plank+with+Arm+Lift" alt="Plank with Arm Lift">
+      <h4>Plank with Arm Lift</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Plank+with+Leg+Lift" alt="Plank with Leg Lift">
+      <h4>Plank with Leg Lift</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Side+Plank" alt="Side Plank">
+      <h4>Side Plank</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Side+Plank+Hip+Dip" alt="Side Plank with Hip Dip">
+      <h4>Side Plank with Hip Dip</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Russian+Twist" alt="Russian Twist">
+      <h4>Russian Twist</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Back+Hyperextension" alt="Back Hyperextension">
+      <h4>Back Hyperextension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Stability+Ball+Bridge" alt="Stability Ball Bridge">
+      <h4>Stability Ball Bridge</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Superman+Alternating" alt="Superman Alternating">
+      <h4>Superman Alternating</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Seated+Good+Morning" alt="Seated Good Morning">
+      <h4>Seated Good Morning</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Thoracic+Extension" alt="Thoracic Extension Stretch">
+      <h4>Thoracic Extension Stretch</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🦵 HIP</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hip+Rotation" alt="Hip Rotation">
+      <h4>Hip Rotation</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Clamshell+Exercise" alt="Clamshell Exercise">
+      <h4>Clamshell Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Side+Leg+Raise" alt="Side Leg Raise">
+      <h4>Side Leg Raise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Standing+Leg+Lift" alt="Standing Leg Lift">
+      <h4>Standing Leg Lift</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hip+Flexor+Stretch" alt="Hip Flexor Stretch">
+      <h4>Hip Flexor Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Donkey+Kicks" alt="Donkey Kicks">
+      <h4>Donkey Kicks</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Fire+Hydrant" alt="Fire Hydrant">
+      <h4>Fire Hydrant</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Lunges" alt="Lunges">
+      <h4>Lunges</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Bulgarian+Split+Squat" alt="Bulgarian Split Squat">
+      <h4>Bulgarian Split Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single-Leg+Glute+Bridge" alt="Single-Leg Glute Bridge">
+      <h4>Single-Leg Glute Bridge</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cable+Hip+Abduction" alt="Cable Hip Abduction">
+      <h4>Cable Hip Abduction</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Cable+Hip+Adduction" alt="Cable Hip Adduction">
+      <h4>Cable Hip Adduction</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Lateral+Band+Walk" alt="Lateral Band Walk">
+      <h4>Lateral Band Walk</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Sumo+Squat" alt="Sumo Squat">
+      <h4>Sumo Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Curtsy+Lunge" alt="Curtsy Lunge">
+      <h4>Curtsy Lunge</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Step-Down+Drill" alt="Step-Down Drill">
+      <h4>Step-Down Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hip+Thrust" alt="Hip Thrust">
+      <h4>Hip Thrust</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single-Leg+RDL" alt="Single-Leg Romanian Deadlift">
+      <h4>Single-Leg Romanian Deadlift</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🦿 KNEE</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Straight+Leg+Raise" alt="Straight Leg Raise">
+      <h4>Straight Leg Raise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Heel+Slides" alt="Heel Slides">
+      <h4>Heel Slides</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wall+Squats" alt="Wall Squats">
+      <h4>Wall Squats</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Step-Ups" alt="Step-Ups">
+      <h4>Step-Ups</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hamstring+Stretch" alt="Hamstring Stretch">
+      <h4>Hamstring Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Quad+Sets" alt="Quad Sets">
+      <h4>Quad Sets</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Mini+Squats" alt="Mini Squats">
+      <h4>Mini Squats</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Terminal+Knee+Ext" alt="Terminal Knee Extension">
+      <h4>Terminal Knee Extension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Wall+Sit" alt="Wall Sit">
+      <h4>Wall Sit</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Jump+Squat" alt="Jump Squat">
+      <h4>Jump Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Box+Squat" alt="Box Squat">
+      <h4>Box Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Nordic+Hamstring+Curl" alt="Nordic Hamstring Curl">
+      <h4>Nordic Hamstring Curl</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Lateral+Step-Up" alt="Lateral Step-Up">
+      <h4>Lateral Step-Up</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Reverse+Lunge" alt="Reverse Lunge">
+      <h4>Reverse Lunge</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Split+Squat" alt="Split Squat">
+      <h4>Split Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Terminal+Knee+Band" alt="Terminal Knee Band Walk">
+      <h4>Terminal Knee Band Walk</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Skater+Squat" alt="Skater Squat">
+      <h4>Skater Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single-Leg+Press" alt="Single-Leg Press">
+      <h4>Single-Leg Press</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🦶 ANKLE & FOOT</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Ankle+Circles" alt="Ankle Circles">
+      <h4>Ankle Circles</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Calf+Raises" alt="Calf Raises">
+      <h4>Calf Raises</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Toe+Raises" alt="Toe Raises">
+      <h4>Toe Raises</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Heel+Walking" alt="Heel Walking">
+      <h4>Heel Walking</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Towel+Scrunch" alt="Towel Scrunch">
+      <h4>Towel Scrunch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Ankle+Pumps" alt="Ankle Pumps">
+      <h4>Ankle Pumps</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Toe+Spread" alt="Toe Spread Exercise">
+      <h4>Toe Spread Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Achilles+Stretch" alt="Achilles Stretch">
+      <h4>Achilles Stretch</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single-Leg+Calf+Raise" alt="Single-Leg Calf Raise">
+      <h4>Single-Leg Calf Raise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Jump+Rope" alt="Jump Rope">
+      <h4>Jump Rope</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Lateral+Hops" alt="Lateral Hops">
+      <h4>Lateral Hops</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Toe+Walking" alt="Toe Walking">
+      <h4>Toe Walking</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=BOSU+Balance+Drill" alt="BOSU Balance Drill">
+      <h4>BOSU Balance Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Ankle+Band+Flexion" alt="Ankle Resistance Band Flexion">
+      <h4>Ankle Resistance Band Flexion</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Ankle+Band+Extension" alt="Ankle Resistance Band Extension">
+      <h4>Ankle Resistance Band Extension</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Heel+Drop" alt="Heel Drop (Eccentric)">
+      <h4>Heel Drop (Eccentric)</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single-Leg+Balance" alt="Single-Leg Balance">
+      <h4>Single-Leg Balance</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Agility+Ladder+Drill" alt="Agility Ladder Drill">
+      <h4>Agility Ladder Drill</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🏃 FULL BODY BONE DENSITY & FUNCTIONAL</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Walking" alt="Walking">
+      <h4>Walking</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Light+Jogging" alt="Light Jogging">
+      <h4>Light Jogging</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Stair+Climbing" alt="Stair Climbing">
+      <h4>Stair Climbing</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Jumping+Jacks" alt="Jumping Jacks">
+      <h4>Jumping Jacks</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Resistance+Band" alt="Resistance Band Training">
+      <h4>Resistance Band Training</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Light+Dumbbell" alt="Light Dumbbell Training">
+      <h4>Light Dumbbell Training</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Yoga+Sun+Salutation" alt="Yoga Sun Salutation">
+      <h4>Yoga Sun Salutation</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Tai+Chi" alt="Tai Chi">
+      <h4>Tai Chi</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Plank+Hold" alt="Plank Hold">
+      <h4>Plank Hold</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Mountain+Climbers" alt="Mountain Climbers">
+      <h4>Mountain Climbers</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Deadlift" alt="Deadlift">
+      <h4>Deadlift</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Barbell+Squat" alt="Barbell Squat">
+      <h4>Barbell Squat</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Kettlebell+Swing" alt="Kettlebell Swing">
+      <h4>Kettlebell Swing</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Battle+Rope" alt="Battle Rope">
+      <h4>Battle Rope</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Medicine+Ball+Slam" alt="Medicine Ball Slam">
+      <h4>Medicine Ball Slam</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Burpees" alt="Burpees">
+      <h4>Burpees</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Power+Step+Climb" alt="Power Step Climb">
+      <h4>Power Step Climb</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Hiking" alt="Hiking">
+      <h4>Hiking</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Rowing+Machine" alt="Rowing Machine">
+      <h4>Rowing Machine</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Elliptical+Training" alt="Elliptical Training">
+      <h4>Elliptical Training</h4>
+    </div>
+  </div>
+</section>
+
+<section class="exercises">
+  <h3>🏥 CLINICAL REHABILITATION & BALANCE</h3>
+  <div class="service-box">
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Passive+ROM" alt="Passive Range of Motion">
+      <h4>Passive Range of Motion</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Active+Assisted+ROM" alt="Active Assisted Range of Motion">
+      <h4>Active Assisted Range of Motion</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Active+ROM" alt="Active Range of Motion">
+      <h4>Active Range of Motion</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Isometric+Quad" alt="Isometric Quadriceps Contraction">
+      <h4>Isometric Quadriceps Contraction</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Isometric+Glute" alt="Isometric Glute Contraction">
+      <h4>Isometric Glute Contraction</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Scapular+Retraction" alt="Scapular Retraction">
+      <h4>Scapular Retraction</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Posture+Correction" alt="Posture Correction Exercise">
+      <h4>Posture Correction Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Balance+Training" alt="Balance Training">
+      <h4>Balance Training</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Heel-to-Toe+Walk" alt="Heel-to-Toe Walk">
+      <h4>Heel-to-Toe Walk</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Single+Leg+Stand" alt="Single Leg Stand">
+      <h4>Single Leg Stand</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Gait+Training" alt="Gait Training">
+      <h4>Gait Training</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Proprioception+Drill" alt="Proprioception Drill">
+      <h4>Proprioception Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Functional+Reach" alt="Functional Reach Exercise">
+      <h4>Functional Reach Exercise</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Sit-to-Stand+Drill" alt="Sit-to-Stand Drill">
+      <h4>Sit-to-Stand Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Stair+Descent" alt="Stair Descent Control">
+      <h4>Stair Descent Control</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Dynamic+Balance" alt="Dynamic Balance Board">
+      <h4>Dynamic Balance Board</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Tandem+Stance" alt="Tandem Stance">
+      <h4>Tandem Stance</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Obstacle+Walk" alt="Obstacle Walk">
+      <h4>Obstacle Walk</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Reactive+Step+Drill" alt="Reactive Step Drill">
+      <h4>Reactive Step Drill</h4>
+    </div>
+    <div class="card" style="opacity:1">
+      <img src="https://placehold.co/600x400?text=Controlled+Fall" alt="Controlled Fall Practice">
+      <h4>Controlled Fall Practice</h4>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Techno Sayain</p>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
